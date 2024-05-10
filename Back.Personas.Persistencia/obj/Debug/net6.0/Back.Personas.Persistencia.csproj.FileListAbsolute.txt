@@ -1,0 +1,5 @@
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.csproj.AssemblyReference.cache
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.AssemblyInfoInputs.cache
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.AssemblyInfo.cs
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.csproj.CoreCompileInputs.cache
