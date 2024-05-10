@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Personas.Api", "Back.Personas.Api\Back.Personas.Api.csproj", "{4E5BB7C2-AA8F-4125-999C-5BFD06E45E50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Back.Personas.Api", "Back.Personas.Api\Back.Personas.Api.csproj", "{4E5BB7C2-AA8F-4125-999C-5BFD06E45E50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Personas.CasosDeUso", "Back.Personas.CasosDeUso\Back.Personas.CasosDeUso.csproj", "{9C7A323D-EB3A-40AD-BD29-5B7E2AE75744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Back.Personas.CasosDeUso", "Back.Personas.CasosDeUso\Back.Personas.CasosDeUso.csproj", "{9C7A323D-EB3A-40AD-BD29-5B7E2AE75744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Personas.Dominio", "Back.Personas.Dominio\Back.Personas.Dominio.csproj", "{E9CD6973-42B2-4F29-BE66-DEE65734B49B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Back.Personas.Dominio", "Back.Personas.Dominio\Back.Personas.Dominio.csproj", "{E9CD6973-42B2-4F29-BE66-DEE65734B49B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Personas.Persistencia", "Back.Personas.Persistencia\Back.Personas.Persistencia.csproj", "{83DF580C-325E-4E41-BBB0-54E561BCF55B}"
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Back.Personas.DataBase", "Back.Personas.DataBase\Back.Personas.DataBase.sqlproj", "{E5D2E881-A1B9-4FEE-8A1D-3BA992C8F60D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Back.Personas.Persistencia", "Back.Personas.Persistencia\Back.Personas.Persistencia.csproj", "{83DF580C-325E-4E41-BBB0-54E561BCF55B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CFC25A50-8269-4B26-B3A6-94A9ABC4C353}"
 EndProject
@@ -45,12 +43,6 @@ Global
 		{83DF580C-325E-4E41-BBB0-54E561BCF55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83DF580C-325E-4E41-BBB0-54E561BCF55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83DF580C-325E-4E41-BBB0-54E561BCF55B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5D2E881-A1B9-4FEE-8A1D-3BA992C8F60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5D2E881-A1B9-4FEE-8A1D-3BA992C8F60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5D2E881-A1B9-4FEE-8A1D-3BA992C8F60D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E5D2E881-A1B9-4FEE-8A1D-3BA992C8F60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5D2E881-A1B9-4FEE-8A1D-3BA992C8F60D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5D2E881-A1B9-4FEE-8A1D-3BA992C8F60D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,7 +52,6 @@ Global
 		{9C7A323D-EB3A-40AD-BD29-5B7E2AE75744} = {FF37E1B0-D581-47D4-825D-9A4BBB36E214}
 		{E9CD6973-42B2-4F29-BE66-DEE65734B49B} = {FF37E1B0-D581-47D4-825D-9A4BBB36E214}
 		{83DF580C-325E-4E41-BBB0-54E561BCF55B} = {98FE3520-4497-4F87-AD0E-F39C58FD99B8}
-		{E5D2E881-A1B9-4FEE-8A1D-3BA992C8F60D} = {5C88CB71-2472-43C5-9C25-A22EEB84F59D}
 		{98FE3520-4497-4F87-AD0E-F39C58FD99B8} = {CFC25A50-8269-4B26-B3A6-94A9ABC4C353}
 		{FF37E1B0-D581-47D4-825D-9A4BBB36E214} = {CFC25A50-8269-4B26-B3A6-94A9ABC4C353}
 		{80C7BDB2-59CB-4716-9FF4-2FFAD9A0D750} = {CFC25A50-8269-4B26-B3A6-94A9ABC4C353}
