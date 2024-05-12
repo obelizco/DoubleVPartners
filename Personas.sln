@@ -20,6 +20,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{80C7BDB2-59CB-4716-9FF4-2FFAD9A0D750}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{5C88CB71-2472-43C5-9C25-A22EEB84F59D}"
+	ProjectSection(SolutionItems) = preProject
+		script_dvp.sql = script_dvp.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
