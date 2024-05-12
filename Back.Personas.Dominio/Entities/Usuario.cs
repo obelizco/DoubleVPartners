@@ -10,9 +10,9 @@ namespace Back.Personas.Dominio.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("IdUsuario")]
         public Guid IdUsuario { get; set; }
-        [Column("NombreUsuario")]
+        [Column("Usuario")]
         public string NombreUsuario { get; set; }
-        [Column("Contrasena")]
+        [Column("Pass")]
         public string Contrasena { get; set; }
 
     }

@@ -1,4 +1,6 @@
-﻿using Back.Personas.Persistencia.Context;
+﻿using Back.Personas.Dominio.Interfaces;
+using Back.Personas.Persistencia.Context;
+using Back.Personas.Persistencia.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +22,8 @@ namespace Back.Personas.Persistencia
                     }
                 );
             });
+            services.AddTransient<IUsuarioRepository,UsuarioRepository>();
+            services.AddTransient<IPersonaRepository,PersonaRepository>();
         }
 
     }

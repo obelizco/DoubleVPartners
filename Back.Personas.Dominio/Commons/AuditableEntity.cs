@@ -2,9 +2,9 @@
 {
     public class AuditableEntity
     {
-        public string CreadoPor { get; set; } = "";
+        public Guid CreadoPor { get; set; } = Guid.Empty;
         public DateTime FechaCreacion { get; set; }
-        public string ModificadoPor { get; set; } = "";
+        public Guid ModificadoPor { get; set; } = Guid.Empty;
         public DateTime? FechaModificacion { get; set; }
     }
 }

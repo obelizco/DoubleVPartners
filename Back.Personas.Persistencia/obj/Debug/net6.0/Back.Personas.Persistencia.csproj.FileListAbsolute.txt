@@ -1,0 +1,15 @@
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\bin\Debug\net6.0\Back.Personas.Persistencia.deps.json
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\bin\Debug\net6.0\Back.Personas.Persistencia.dll
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\bin\Debug\net6.0\Back.Personas.Persistencia.pdb
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\bin\Debug\net6.0\Back.Personas.Dominio.dll
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\bin\Debug\net6.0\Back.Personas.Dominio.pdb
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.csproj.AssemblyReference.cache
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.AssemblyInfoInputs.cache
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.AssemblyInfo.cs
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.csproj.CopyComplete
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.dll
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\refint\Back.Personas.Persistencia.dll
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\Back.Personas.Persistencia.pdb
+C:\Users\Omar\Documents\Personas\Personas\Back.Personas.Persistencia\obj\Debug\net6.0\ref\Back.Personas.Persistencia.dll

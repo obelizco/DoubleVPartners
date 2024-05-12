@@ -24,18 +24,20 @@ namespace Back.Personas.Persistencia.Context
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
+
             foreach (var entry in ChangeTracker.Entries<AuditableEntity>())
             {
+                var userId = Guid.Parse(_usuarioAutenticado.UserId);
                 DateTime date = DateTime.UtcNow;
                 switch (entry.State)
                 {
                     case EntityState.Added:
                         entry.Entity.FechaCreacion = date;
-                        entry.Entity.CreadoPor = _usuarioAutenticado.UserId;
+                        entry.Entity.CreadoPor = userId;
                         break;
                     case EntityState.Modified:
                         entry.Entity.FechaModificacion = date;
-                        entry.Entity.ModificadoPor = _usuarioAutenticado.UserId;
+                        entry.Entity.ModificadoPor = userId;
                         break;
                 }
             }

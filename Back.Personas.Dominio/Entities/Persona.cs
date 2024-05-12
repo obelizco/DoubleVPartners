@@ -14,8 +14,8 @@ namespace Back.Personas.Dominio.Entities
         public string Nombres { get; set; }
         [Column("Apellidos")]
         public string Apellidos { get; set; }
-        [Column("Identificacion")]
-        public string Identificacion { get; set; }
+        [Column("NumeroIdentificacion")]
+        public long NumeroIdentificacion { get; set; }
         [Column("Email")]
         public string Email { get; set; }
         [Column("TipoIdentificacion")]
