@@ -8,7 +8,7 @@ using MediatR;
 
 namespace Back.Personas.CasosDeUso.Seguridad
 {
-    public sealed class LoginHandler : IRequestHandler<LoginRequest, ResponseBase<string>>
+    public sealed class LoginHandler : IRequestHandler<LoginRequest, ResponseBase<LoginDto>>
     {
         private readonly JwtService _jwtService;
         private readonly IMapper _mapper;
@@ -20,13 +20,13 @@ namespace Back.Personas.CasosDeUso.Seguridad
             _jwtService = jwtService;   
         }
 
-        public async Task<ResponseBase<string>> Handle(LoginRequest request, CancellationToken cancellationToken)
+        public async Task<ResponseBase<LoginDto>> Handle(LoginRequest request, CancellationToken cancellationToken)
         {
             var user = await _usuarioRepository.GetUsuarioAsync(request.usuario);
             var password = user?.Contrasena is not null ? user.Contrasena : null;
             if(user is null)
             {
-                return new ResponseBase<string>(
+                return new ResponseBase<LoginDto>(
                    code: HttpStatusCode.NotAcceptable,
                    message: "Usuario no encontrado"
                    );
@@ -35,7 +35,7 @@ namespace Back.Personas.CasosDeUso.Seguridad
 
             if (!BCrypt.Net.BCrypt.Verify(request.password, password))
             {
-                return new ResponseBase<string>(
+                return new ResponseBase<LoginDto>(
                     code: HttpStatusCode.NotAcceptable,
                     message: "Usuario y/o contraseña invalidos"
                     );
@@ -43,11 +43,16 @@ namespace Back.Personas.CasosDeUso.Seguridad
             }
             var userToken = _mapper.Map<UsuarioDto>(user);
             var token = _jwtService.GenerateToken(userToken);
-
-            return new ResponseBase<string>(
+            var data = new LoginDto()
+            {
+                IdUsuario = user.IdUsuario,
+                NombreUsuario = user.NombreUsuario,
+                Token = token,
+            };
+            return new ResponseBase<LoginDto>(
                     code: HttpStatusCode.Accepted,
-                    message:"OK",
-                    data:token
+                    message: "OK",
+                    data: data
                     );
         }
     }
