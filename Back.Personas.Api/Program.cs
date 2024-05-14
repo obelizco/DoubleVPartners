@@ -13,7 +13,12 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<IUserAuthenticate, UserAuthenticate>();
 builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddSwaggerGen();
+builder.Services.AddCors(o => o.AddPolicy("AllowWebapp", builder =>
+{
+    builder.AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader();
+}));
 
 builder.Services.AddJwt(config);
 
@@ -22,7 +27,7 @@ builder.Services.Aplicacion();
 builder.Services.AddSwagger();
 
 var app = builder.Build();
-
+app.UseCors("AllowWebapp");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
